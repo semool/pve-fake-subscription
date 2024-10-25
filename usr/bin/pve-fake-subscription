@@ -27,7 +27,7 @@ lic_pbs = "pbst-1145141919"
 # UI customization
 ui_product_name = "Fake Key"
 ui_message = "For personal use only"
-ui_url = "https://github.com/Jamesits/pve-fake-subscription"
+ui_url = "https://github.com/semool/pve-fake-subscription"
 
 def get_timestamp():
     return int(time.time())
@@ -86,7 +86,7 @@ def activate_pve_pmg(key, subscription_file, *args, **kwargs):
     with open(subscription_file, "w") as f:
         f.write(subscription)
 
-def generate_subscription_pbs(key, server_ids, product_name=ui_product_name, message=ui_message):
+def generate_subscription_pbs(key, server_ids, product_name=ui_product_name, message=ui_message, url=ui_url):
     localinfo = {
         "status": "active", # PBS: `new`, `notfound`, `active`, `invalid`
         "serverid": ",".join(server_ids),
