@@ -25,8 +25,8 @@ lic_pmg = "pmgp-1145141919"
 lic_pbs = "pbst-1145141919"
 
 # UI customization
-ui_product_name = "YajuuSenpai"
-ui_message = "Yajuu Senpai has got your back"
+ui_product_name = "Fake Key"
+ui_message = "For personal use only"
 ui_url = "https://github.com/Jamesits/pve-fake-subscription"
 
 def get_timestamp():
